@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,10 +12,9 @@ public class Muelleimer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag == "AltesTShirt" || other.tag == "AltesTShirt")
+        if (other.tag == "NormalesTShirt" || other.tag == "NormalesTShirt")
         {
-            counter.Hearts(1);
-            Debug.Log("Counter: " + counter.heart);
+          
             Destroy(other.gameObject);
         }
 

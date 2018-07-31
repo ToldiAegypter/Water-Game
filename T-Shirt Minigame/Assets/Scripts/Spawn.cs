@@ -18,11 +18,11 @@ public class Spawn : MonoBehaviour
 	 {
         if (Random.Range(0f, 1f) > 0.5f)
         {
-            Instantiate(AltesTShirt, transform.position, Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.forward));
+            Instantiate(AltesTShirt, transform.position, Quaternion.AngleAxis (0f, Vector3.forward));
         }
         else
         {
-            Instantiate(NormalesTShirt, transform.position, Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), Vector3.forward));
+            Instantiate(NormalesTShirt, transform.position, Quaternion.AngleAxis(0f, Vector3.forward));
         }
 	 }
 

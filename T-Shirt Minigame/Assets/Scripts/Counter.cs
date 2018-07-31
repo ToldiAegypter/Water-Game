@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Counter : MonoBehaviour {
 
     int Gesamtpunkte = 0;
-    int heart = 3;
+    public int heart = 3;
     public TextMesh Countertext;
     private GameObject herz;
 
