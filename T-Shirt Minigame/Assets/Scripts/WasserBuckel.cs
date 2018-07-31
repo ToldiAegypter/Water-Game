@@ -12,9 +12,10 @@ public class Muelleimer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag == "NormalesTShirt" || other.tag == "NormalesTShirt")
+        if (other.tag == "AltesTShirt" || other.tag == "AltesTShirt")
         {
-          
+            counter.Hearts(1);
+            Debug.Log("Counter: " + counter.heart);
             Destroy(other.gameObject);
         }
 
