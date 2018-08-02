@@ -1,7 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Counter : MonoBehaviour {
 
@@ -11,16 +12,18 @@ public class Counter : MonoBehaviour {
     private GameObject herz;
 
 
+DateTime Startzeit; 
 
     // Use this for initialization
     void Start() {
-
+    	Startzeit=DateTime.Now;
     }
 
     // Update is called once per frame
     void Update() {
 
-
+    	TimeSpan Vergangen=DateTime.Now-Startzeit;
+    	Countertext.text=""+Vergangen.Minutes+":"+Vergangen.Seconds;
     }
 
     public void MehrPunkte(int Punkte)
