@@ -11,12 +11,12 @@ public class Swipable : MonoBehaviour
     // Use this for initialization
     void Start ()
 	{
-		bounds = spriteToTouch.bounds;
+		
     }
     
     void Update ()
 	 {
-        
+          bounds = spriteToTouch.bounds;
 		  //Gets the world position of the mouse on the screen        
 		  Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
